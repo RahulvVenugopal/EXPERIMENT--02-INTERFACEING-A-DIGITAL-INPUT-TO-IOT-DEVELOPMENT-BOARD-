@@ -77,11 +77,41 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 
 
 ## STM 32 CUBE PROGRAM :
+```
+#include"main.h"
+#include"stdbool.h"
+void IRsensor();
+bool IRsensorop;
+```
+```
+while (1)
+  {
+	  IRsensor();
+  void IRsensor()
+  {
+	  IRsensorop=HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_3);
+	  if(IRsensorop==1)
+	  {
+		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_SET);
+		  HAL_Delay(500);
+		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
+		  HAL_Delay(500);
+	  }
+	  else{
+		  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
+		  HAL_Delay(500);
+	  }
+  }
+```
 
 
 
 ## Output  :
- 
+### ON state
+ ![421811684-c1f40fbb-9e0a-45cf-9470-0b887b2cf5fb](https://github.com/user-attachments/assets/7d1d027e-2198-47a2-a131-dd49f272e521)
+ ### OFF state
+![421811398-672bd370-f4d2-45b4-bebc-43402a16a93f](https://github.com/user-attachments/assets/fc4c18af-a4b2-45b8-8fdd-b7e26256084c)
+
  
  
  
