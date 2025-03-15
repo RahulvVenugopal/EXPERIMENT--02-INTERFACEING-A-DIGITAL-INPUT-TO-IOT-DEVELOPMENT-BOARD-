@@ -107,9 +107,9 @@ while (1)
 
 
 ## Output  :
-### ON state
+### OFF state
  ![421811684-c1f40fbb-9e0a-45cf-9470-0b887b2cf5fb](https://github.com/user-attachments/assets/7d1d027e-2198-47a2-a131-dd49f272e521)
- ### OFF state
+ ### ON state
 ![421811398-672bd370-f4d2-45b4-bebc-43402a16a93f](https://github.com/user-attachments/assets/fc4c18af-a4b2-45b8-8fdd-b7e26256084c)
 
  
